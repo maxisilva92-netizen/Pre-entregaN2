@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/*font-family: "Quicksand", sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    color:blue;
+    font-family: "Quicksand", sans-serif;
+    margin: 50px;
+    border: solid 2px blue;
+}
+p{
+    font-family: "Quicksand", sans-serif;
+}
+.testimonio {
+    font-style: italic;
+    font-size: large;
+}
