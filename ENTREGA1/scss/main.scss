@@ -1,0 +1,14 @@
+//BASE//
+@use './partials/base/_reset.scss';
+@use './partials/base/_tipografia.scss';
+
+//COMPONENTES DE LA PAGINA//
+@use './partials/component/_footer.scss';
+@use './partials/component/_header.scss';
+@use './partials/component/_main.scss';
+@use './partials/component/_button.scss';
+
+//HERRAMIENTAS//
+@use './partials/utilities/_variables.scss';
+@use './partials/utilities/_mixins.scss';
+@use './partials/utilities/_extend.scss';

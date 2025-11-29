@@ -1,0 +1,29 @@
+@use '../utilities/_mixins.scss';
+@use '../utilities/_variables.scss';
+
+.bg-nav-propia
+{
+    @include mixins.flex(row, center, center);
+    background-color: variables.$secondary-colorbackground;
+    font-weight: bold;
+    
+    .nav-link{
+        color:rgba(0, 0, 0, 0.434);
+        margin-right: 15px;
+        font-size: 20px;
+         &:hover
+         {
+        background-color:rgba(0, 191, 255, 0.901);
+        color:white;
+        border-radius: 8px;
+         }
+   
+    }
+   .navbar-brand img   
+         {
+         height: 60px;
+        }
+  
+      
+    
+}

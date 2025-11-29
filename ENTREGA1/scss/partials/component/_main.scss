@@ -1,0 +1,51 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+body {
+    background-color:variables.$main-colorbackground;
+    margin: 0;
+    padding: 0;
+
+}
+
+.pagina {
+    @include mixins.flex(row, space-evenly, center);
+    margin: 20px;
+    font-size: 25px; 
+   max-width: 100%;
+   
+
+}
+
+.pagina div {
+    @include mixins.flex(column, center, center);
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    font-size: 25px;
+    line-height: 1.6;
+    max-width: 100%;
+}
+.pagina img {
+     max-width: 100%;
+    height: 450px;
+    width: 450px;
+    margin-bottom: 20px;
+}
+.parrafo-destacado {
+
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.testimonio {
+    font-style: italic;
+    font-size: large;
+}
+
+.titulo {
+   text-align: center;
+}
+
