@@ -54,22 +54,26 @@ body {
   padding: 0px;
 }
 
+@media (max-width: 576px) {
+  .pagina {
+    flex-direction: column;
+    padding: 0;
+    justify-content: justify;
+  }
+}
 .pagina {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin: 20px;
+  margin: 5px;
   font-size: 25px;
   max-width: 100%;
-}
-@media (max-width: 576px) {
-  .pagina {
-    flex-direction: column;
-    padding: 0;
-  }
 }
 
 .pagina div {
@@ -124,6 +128,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-size: 40px;
   text-align: center;
   padding: 20px;
   margin-top: 20px;

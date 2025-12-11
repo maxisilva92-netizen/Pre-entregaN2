@@ -9,14 +9,24 @@ body {
 }
 
 .pagina {
-    @include mixins.flex(row, space-evenly, center);
-    margin: 20px;
-    font-size: 25px; 
-   max-width: 100%;
-   @media (max-width: 576px) {
+     @media (max-width: 576px) {
         flex-direction: column;
         padding: 0;
+        justify-content: justify;
     }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    
+    @include mixins.flex(row, space-evenly, center);
+    margin: 5px;
+    font-size: 25px; 
+   max-width: 100%;
+
+   
+   
+   
+  
    
 }
 
@@ -56,6 +66,7 @@ body {
 
 .titulo{
 @include mixins.flex(row, center, center);
+    font-size: 40px;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
